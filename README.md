@@ -11,7 +11,7 @@ What the model does (current version):
     - Daily cycle cap (equivalent full cycles),
     - linear degradation cost per MWh throughput.
     - Handles dual pricing conservatively (implicity in objective function since in all cases of dual pricing short price > long price)
-    
+
 
 Default parameters:
 
@@ -89,7 +89,6 @@ Run from main script (run_optimisation.py) and tweak input params
 Or run from CLI:
 
 ```bash
-# default (v010, highs)
 python scripts/run_optimisation.py
 ```
 
