@@ -3,6 +3,7 @@
 **Battery Steering Optimisation** is a Python project using [Pyomo](http://www.pyomo.org/) to formulate and solve an MILP that maximises weekly revenue for a 1 MW / 2 MWh battery on the passive imbalance market. Decisions are taken per 15-minute PTU. The default solver is [HiGHS](https://highs.dev).
 
 What the model does (current version):
+
     - Optimises charge/discharge power each PTU subject to: power limit (|P| ≤ 1 MW),
     - Energy (SoC) bounds (0–2 MWh),
     - Round-trip efficiency,
@@ -10,6 +11,7 @@ What the model does (current version):
     - Daily cycle cap (equivalent full cycles),
     - linear degradation cost per MWh throughput.
     - Handles dual pricing conservatively (implicity in objective function since in all cases of dual pricing short price > long price)
+    
 
 Default parameters:
 
@@ -117,9 +119,8 @@ battery-steering-optimisation/
 │     ├─ test_validation.py                             # tests for model validation      
 │     ├─ utils.py                           
 │     └─ visualisation.py           
-├─ README.md                        
-├─ requirements.txt     
-└─ TODO.txt                         
+├─ README.md                          
+└─ requirements.txt                           
 ```
 
 ---
